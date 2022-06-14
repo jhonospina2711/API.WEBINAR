@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroup')]/providers/microsoft.insights/components/davivienda-dev-covid-ia-api",
+      "type": "appInsights.azure",
+      "connectionId": "APPINSIGHTS_INSTRUMENTATIONKEY",
+      "secretStore": "AzureAppSettings"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId1')]/resourceGroups/[parameters('resourceGroup1')]/providers/Microsoft.Sql/servers/app-covid-dev/databases/Covid-dev-19",
+      "type": "mssql.azure",
+      "connectionId": "Api-AzureDB",
+      "secretStore": "AzureKeyVault"
+    }
+  }
+}
